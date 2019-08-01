@@ -1,2 +1,3 @@
-# goelarushi.github.io
-Personal Website
+# My Personal Webpage
+
+goelarushi.github.io
