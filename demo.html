@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>neuraltalk2 results visualization</title>
-    <script src="jquery-1.8.3.min.js"></script>
+    <title>Captions Visualization</title>
+    <script src="_site/vis/jquery-1.8.3.min.js"></script>
     <style>
     body {
       background: #000;
@@ -57,10 +57,10 @@
       }
     }
     $(window).scroll(loadVisible);
-    $.getJSON('vis.json?t=' + +new Date, function (data) {
+    $.getJSON('_site/vis/vis.json?t=' + +new Date, function (data) {
       $('#results').html('');
       for (var i = 0; i < data.length; i++) {
-        var path = 'imgs/img' + (i + 1) + '.jpg';
+        var path = '_site/vis/imgs/img' + (i + 1) + '.jpg';
         $('<div class="result">')
           .data('image', path)
           .append($('<p>').text(data[i].caption))
