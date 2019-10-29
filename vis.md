@@ -1,5 +1,5 @@
 ---
-layout: post-index
+layout: demo
 permalink: /vis/
 title: Caption Visualization
 tagline: Captions
