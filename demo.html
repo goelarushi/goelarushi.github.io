@@ -57,10 +57,10 @@
       }
     }
     $(window).scroll(loadVisible);
-    $.getJSON('_site/vis/vis.json?t=' + +new Date, function (data) {
+    $.getJSON('vis.json?t=' + +new Date, function (data) {
       $('#results').html('');
       for (var i = 0; i < data.length; i++) {
-        var path = '_site/vis/imgs/img' + (i + 1) + '.jpg';
+        var path = 'imgs/img' + (i + 1) + '.jpg';
         $('<div class="result">')
           .data('image', path)
           .append($('<p>').text(data[i].caption))
